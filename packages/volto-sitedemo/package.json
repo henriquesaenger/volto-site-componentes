@@ -26,7 +26,22 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@eeacms/volto-accordion-block": "*",
+    "@kitconcept/volto-button-block": "*",
+    "@kitconcept/volto-heading-block": "*",
+    "@kitconcept/volto-highlight-block": "*",
+    "@kitconcept/volto-introduction-block": "*",
+    "@kitconcept/volto-separator-block": "*",
+    "@kitconcept/volto-slider-block": "*",
+    "@kitconcept/volto-light-theme": "*",
+
+    "@codesyntax/volto-listingadvanced-variation": "*",
+
+    "@fortawesome/react-fontawesome": "*",
+    "@fortawesome/free-solid-svg-icons": "*",
+    "@kitconcept/volto-dsgvo-banner": "git://github.com/PROCERGS/volto-dsgvo-banner.git"
+  },
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"

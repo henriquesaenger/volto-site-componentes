@@ -1,0 +1,44 @@
+.wrapper__cabecalho__funcionalidades {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper__cabecalho__funcionalidades {
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+  }
+}
+/* Acessibilidade */
+.wrapper__cabecalho__funcionalidades {
+  /*background-color: #ececec;*/
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .wrapper__cabecalho__funcionalidades {
+    display: none !important;
+  }
+}
+
+.horizontal-list {
+  display: flex; /* Exibe os itens da lista em linha */
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove os marcadores da lista */
+}
+
+.horizontal-list li {
+  margin-right: 10px; /* Espaçamento entre os itens */
+}
+.horizontal-list a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
