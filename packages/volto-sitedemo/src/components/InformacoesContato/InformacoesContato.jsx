@@ -2,33 +2,53 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container } from 'semantic-ui-react';
 
-const InformacoesContato = ({ props }) => {
-  const navRoot = useSelector((state) => state.navroot?.data?.navroot);
-  const site = useSelector((state) => state.site.data);
+const InformacoesContato = ({ content }) => {
+  const {
+    logradouro,
+    complemento,
+    cidade,
+    estado,
+    cep,
+    numero,
+    bairro,
+    coordenadas,
+  } = content;
 
   return (
-    <>
-      {navRoot ? (
-        <Container className="informacoes-contato">
-          {site['plone.site_title']}
-          {navRoot.logradouro && <div>{navRoot.logradouro}</div>}
-          {navRoot.complemento && <div>{navRoot.complemento}</div>}
-          {navRoot.cidade && <div>{navRoot.cidade}</div>}
-          {navRoot.coordenadas && (
-            <div>
-              <a
-                href={'https://www.google.com/maps?q=${navRoot.coordenadas}'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver no Google Maps
-              </a>
-            </div>
-          )}
-          {navRoot.email && <div>{navRoot.email}</div>}
-        </Container>
-      ) : null}
-    </>
+    <Container className="endereco-wrapper">
+      <Container>
+        {logradouro && (
+          <>
+            <span className="logradouro">{logradouro}</span>
+            {numero && <span className="numero">, {numero}</span>}
+          </>
+        )}
+        <Container></Container>
+        {complemento && <span className="complemento">{complemento}</span>}
+      </Container>
+      <Container>
+        {bairro && <span className="bairro">{bairro}</span>}
+      </Container>
+      <Container>
+        {cidade && (
+          <>
+            <span className="cidade">{cidade}</span>
+            {estado && <span className="estado"> - {estado.token}</span>}
+          </>
+        )}
+      </Container>
+      {coordenadas && (
+        <div>
+          <a
+            href={`https://www.google.com/maps?q=${coordenadas}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver no Google Maps
+          </a>
+        </div>
+      )}
+    </Container>
   );
 };
 
