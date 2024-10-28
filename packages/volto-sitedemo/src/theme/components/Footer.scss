@@ -28,8 +28,13 @@
   text-align: start;
 }
 
-.footer-info > * {
-  max-width: 25%;
+.footer-info > p {
+  width: 250px;
+}
+
+.footer-selo-governo {
+  width: 250px;
+  text-align: end;
 }
 
 .footer-logo {
