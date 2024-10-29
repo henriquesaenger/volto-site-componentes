@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { div, useEffect, useState } from 'react';
 import { Container, Segment } from 'semantic-ui-react';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { useSelector, shallowEqual } from 'react-redux';
@@ -12,13 +12,24 @@ const Footer = ({ intl }) => {
   const local = navRoot?.local?.data;
 
   return (
-    <Segment id="footer" vertical padded inverted color="grey">
-      {site['plone.site_title']}
-
-      {local && <Endereco content={local} />}
-      {/* <SeloGoverno /> */}
-      <LogoProcergs />
-    </Segment>
+    <div id="footer" stackable vertical padded inverted color="grey">
+      <div className="footer-container">
+        <div className="footer-site-nome">{site['plone.site_title']}</div>
+        <div className="footer-info">
+          {/* <InformacoesContato content={site}/> */}
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            tempore iure in voluptate fugiat totam provident voluptates deserunt
+            veritatis accusamus, nulla doloremque fugit quis ipsum maiores
+            quibusdam nam recusandae facilis.
+          </p>
+          <SeloGoverno />
+        </div>
+      </div>
+      <div className="footer-logo">
+        <LogoProcergs />
+      </div>
+    </div>
   );
 };
 
