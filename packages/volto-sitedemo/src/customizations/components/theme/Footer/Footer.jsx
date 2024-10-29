@@ -4,18 +4,18 @@ import { FormattedMessage, injectIntl } from 'react-intl';
 import { useSelector, shallowEqual } from 'react-redux';
 import LogoProcergs from '../../../../components/LogoProcergs/LogoProcergs';
 import SeloGoverno from '../../../../components/SeloGoverno/SeloGoverno';
-import InformacoesContato from '../../../../components/InformacoesContato/InformacoesContato';
+import Endereco from '../../../../components/Endereco/Endereco';
 
 const Footer = ({ intl }) => {
   const site = useSelector((state) => state.site.data);
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
-  const local = navRoot?.local;
+  const local = navRoot?.local?.data;
 
   return (
     <Segment id="footer" vertical padded inverted color="grey">
       {site['plone.site_title']}
 
-      {/* <InformacoesContato content={site}/> */}
+      {local && <Endereco content={local} />}
       {/* <SeloGoverno /> */}
       <LogoProcergs />
     </Segment>

@@ -1,8 +1,7 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { Container } from 'semantic-ui-react';
 
-const InformacoesContato = ({ content }) => {
+const Endereco = ({ content }) => {
   const {
     logradouro,
     complemento,
@@ -23,12 +22,14 @@ const InformacoesContato = ({ content }) => {
             {numero && <span className="numero">, {numero}</span>}
           </>
         )}
-        <Container></Container>
+      </Container>
+      <Container>
         {complemento && <span className="complemento">{complemento}</span>}
       </Container>
       <Container>
         {bairro && <span className="bairro">{bairro}</span>}
       </Container>
+      <Container>{cep && <span className="cep">{cep}</span>}</Container>
       <Container>
         {cidade && (
           <>
@@ -52,4 +53,4 @@ const InformacoesContato = ({ content }) => {
   );
 };
 
-export default InformacoesContato;
+export default Endereco;

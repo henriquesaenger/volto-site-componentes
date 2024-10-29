@@ -106,8 +106,8 @@ const BarraEstado = () => {
                     target="_self"
                     href="https://estado.rs.gov.br/institucional"
                   >
-                    <span className="visually-hidden">Estado </span>Secretarias
-                    e Órgãos
+                    <span className="visually-hidden">Estado </span>Locais e
+                    Órgãos
                   </a>
                 </li>
                 <li>

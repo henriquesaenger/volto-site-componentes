@@ -16,4 +16,12 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Cabeçalho"
+#: components/Blocks/LocaisBlock/schema
+msgid "Cabeçalho"
+msgstr ""
 
+#. Default: "Locais"
+#: components/Blocks/LocaisBlock/schema
+msgid "Locais"
+msgstr ""
