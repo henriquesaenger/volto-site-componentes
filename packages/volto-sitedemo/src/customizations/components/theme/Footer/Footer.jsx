@@ -16,7 +16,6 @@ const Footer = ({ intl }) => {
       <div className="footer-container">
         <div className="footer-site-nome">{site['plone.site_title']}</div>
         <div className="footer-info">
-          {/* <InformacoesContato content={site}/> */}
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
             tempore iure in voluptate fugiat totam provident voluptates deserunt

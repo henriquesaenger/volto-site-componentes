@@ -7,6 +7,7 @@ import { useIntl, defineMessages } from 'react-intl';
 import config from '@plone/volto/registry';
 import cx from 'classnames';
 import IntranetSearchWidget from '@kitconcept/volto-light-theme/components//SearchWidget/IntranetSearchWidget';
+import SimboloRS from '../../../../components/SimboloRS/SimboloRS';
 
 import {
   Anontools,
@@ -55,10 +56,10 @@ const InternetHeader = ({
           )}
         </div>
         <div className="logo-nav-wrapper">
-          <div className="logo">
-            <Logo />
+          <div className="simbolo">
+            <SimboloRS />
+            <div>{siteTitle}</div>
           </div>
-          <div>{siteTitle}</div>
           <Navigation pathname={pathname} />
           <MobileNavigation pathname={pathname} />
           <div className="search-wrapper navigation-desktop">
@@ -101,10 +102,10 @@ const IntranetHeader = ({
           )}
         </div>
         <div className="logo-nav-wrapper">
-          <div className="logo">
-            <Logo />
+          <div className="simbolo">
+            <SimboloRS />
+            {siteTitle}
           </div>
-          <div>{siteTitle}</div>
           <div className="search-wrapper">
             <div className="search">
               <IntranetSearchWidget />
