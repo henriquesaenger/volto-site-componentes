@@ -16,12 +16,7 @@ const Footer = ({ intl }) => {
       <div className="footer-container">
         <div className="footer-site-nome">{site['plone.site_title']}</div>
         <div className="footer-info">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            tempore iure in voluptate fugiat totam provident voluptates deserunt
-            veritatis accusamus, nulla doloremque fugit quis ipsum maiores
-            quibusdam nam recusandae facilis.
-          </p>
+          {local && <Endereco content={local} />}
           <SeloGoverno />
         </div>
       </div>
