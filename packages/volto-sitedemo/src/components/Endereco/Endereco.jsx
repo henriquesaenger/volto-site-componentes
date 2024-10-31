@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
+import { div } from 'semantic-ui-react';
 
 const Endereco = ({ content }) => {
   const {
@@ -14,30 +14,28 @@ const Endereco = ({ content }) => {
   } = content;
 
   return (
-    <Container className="endereco-wrapper">
-      <Container>
+    <div className="endereco-wrapper">
+      <div>
         {logradouro && (
           <>
             <span className="logradouro">{logradouro}</span>
             {numero && <span className="numero">, {numero}</span>}
           </>
         )}
-      </Container>
-      <Container>
+      </div>
+      <div>
         {complemento && <span className="complemento">{complemento}</span>}
-      </Container>
-      <Container>
-        {bairro && <span className="bairro">{bairro}</span>}
-      </Container>
-      <Container>{cep && <span className="cep">{cep}</span>}</Container>
-      <Container>
+      </div>
+      <div>{bairro && <span className="bairro">{bairro}</span>}</div>
+      <div>{cep && <span className="cep">{cep}</span>}</div>
+      <div>
         {cidade && (
           <>
             <span className="cidade">{cidade}</span>
             {estado && <span className="estado"> - {estado.token}</span>}
           </>
         )}
-      </Container>
+      </div>
       {coordenadas && (
         <div>
           <a
@@ -49,7 +47,7 @@ const Endereco = ({ content }) => {
           </a>
         </div>
       )}
-    </Container>
+    </div>
   );
 };
 
