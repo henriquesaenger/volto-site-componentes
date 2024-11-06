@@ -8,6 +8,7 @@ import config from '@plone/volto/registry';
 import cx from 'classnames';
 import IntranetSearchWidget from '@kitconcept/volto-light-theme/components//SearchWidget/IntranetSearchWidget';
 import SimboloRS from '../../../../components/SimboloRS/SimboloRS';
+import { SearchBar } from '../../../../components/SearchBar/SearchBar';
 
 import {
   Anontools,
@@ -39,7 +40,6 @@ const InternetHeader = ({
       <div className="header">
         <div className="tools-wrapper">
           <LanguageSelector />
-
           <div className="tools">
             {!token && <Anontools />}
             {siteAction &&
@@ -58,13 +58,13 @@ const InternetHeader = ({
         <div className="logo-nav-wrapper">
           <div className="simbolo">
             <SimboloRS />
-            <div>{siteTitle}</div>
+            <div className="header-titulo">{siteTitle}</div>
           </div>
-          <Navigation pathname={pathname} />
+          {/*<Navigation pathname={pathname} />*/}
           <MobileNavigation pathname={pathname} />
           <div className="search-wrapper navigation-desktop">
             <div className="search">
-              <SearchWidget />
+              <SearchBar />
             </div>
           </div>
         </div>

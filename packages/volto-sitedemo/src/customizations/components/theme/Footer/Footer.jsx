@@ -5,7 +5,7 @@ import { useSelector, shallowEqual } from 'react-redux';
 import LogoProcergs from '../../../../components/LogoProcergs/LogoProcergs';
 import SeloGoverno from '../../../../components/SeloGoverno/SeloGoverno';
 import Endereco from '../../../../components/Endereco/Endereco';
-import Telefone from '../../../../components/Telefone/Telefone';
+import Telefone from '../../../../components/Contato/Contato';
 
 const Footer = ({ intl }) => {
   const site = useSelector((state) => state.site.data);
@@ -16,17 +16,23 @@ const Footer = ({ intl }) => {
   return (
     <div id="footer" stackable vertical padded inverted color="grey">
       <div className="footer-container">
-        <div className="footer-site-nome">{site['plone.site_title']}</div>
-        <div className="footer-info">
-          <div className="footer-endereco">
-            {local && <Endereco content={local} />}
-            {contato && <Telefone content={contato} />}
-          </div>
+        <div className="footer-site-nome">
           <SeloGoverno />
+        </div>
+        <div className="footer-info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            nulla eaque obcaecati explicabo nemo fuga. Nesciunt, dicta ratione?
+            Id commodi similique veritatis dolor quae modi porro. Magni
+            exercitationem facilis quae.
+          </p>
         </div>
       </div>
       <div className="footer-logo">
-        <LogoProcergs />
+        <p>
+          Todo o conteúdo deste site está publicado sob a licença Creative
+          Commons Atribuição-SemDerivações 3.0 Não Adaptada
+        </p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 #footer {
-  background-color: gray;
+  background-color: #2f4a0b;
 }
 
 .footer-container {
@@ -21,8 +21,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   color: white;
   gap: 40px;
   text-align: start;
@@ -40,7 +40,12 @@
 .footer-logo {
   height: 80px;
   align-content: center;
-  background-color: white;
+  background-color: #234513;
+}
+
+.footer-logo > p {
+  color: white;
+  font-size: 13px;
 }
 
 @media (min-width: 768px) {
