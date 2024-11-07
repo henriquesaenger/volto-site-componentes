@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faBox,
+  faBoxArchive,
   faCircleHalfStroke,
+  faCookie,
+  faEnvelope,
+  faMailBulk,
+  faMailForward,
   faSitemap,
   faUniversalAccess,
 } from '@fortawesome/free-solid-svg-icons';
@@ -51,6 +57,16 @@ const BarraAcessibilidade = () => {
                 icon={faCircleHalfStroke}
                 flip={theme === 'light' ? undefined : 'horizontal'}
               />{' '}
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <FontAwesomeIcon icon={faCookie} />
+            </a>
+          </li>
+          <li>
+            <a href="/contact-form">
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
           <li>

@@ -96,7 +96,7 @@
   margin-top: 0;
   background: #737474;
   font-family: Roboto, Arial, sans-serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 .barra-estado__nav {
   display: block;
@@ -121,8 +121,8 @@
   box-sizing: border-box;
   padding: 13px 40px;
   color: #1a7235;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 700;
   line-height: 1;
   -webkit-transition: box-shadow 0.25s linear;
   -moz-transition: box-shadow 0.25s linear;
@@ -169,7 +169,7 @@
   }
   .barra-estado__menu > li > a {
     padding: 9px 13px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .barra-estado__menu > li > a:focus,
   .barra-estado__menu > li > a:hover {
