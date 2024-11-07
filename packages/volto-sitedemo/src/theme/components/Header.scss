@@ -4,9 +4,11 @@
   }
   > :nth-child(2) {
     a {
-      //color: unset;
-      //font-size: unset;
-      all: unset;
+      color: unset;
+      font-size: unset;
+    }
+    a:hover {
+      color: #f8f8f8 !important;
     }
   }
 }
