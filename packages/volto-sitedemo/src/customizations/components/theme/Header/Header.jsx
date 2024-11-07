@@ -144,7 +144,7 @@ const Header = (props) => {
       className={cx('header-wrapper', { 'intranet-header': intranetHeader })}
     >
       <BarraEstado />
-      {/* <BarraAcessibilidade /> */}
+      <BarraAcessibilidade />
       <Container layout>
         {intranetHeader ? (
           <IntranetHeader

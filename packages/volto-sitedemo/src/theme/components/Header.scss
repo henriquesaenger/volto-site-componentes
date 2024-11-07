@@ -1,5 +1,14 @@
-.header-wrapper > * {
-  all: unset !important;
+.header-wrapper {
+  > :nth-child(3) {
+    all: unset !important;
+  }
+  > :nth-child(2) {
+    a {
+      //color: unset;
+      //font-size: unset;
+      all: unset;
+    }
+  }
 }
 
 .header {

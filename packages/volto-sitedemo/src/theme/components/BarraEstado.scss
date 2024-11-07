@@ -89,9 +89,7 @@
   height: 16px;
   margin-top: 6px;
 }
-.barra-estado__logo svg path {
-  fill: #f4f4f1;
-}
+
 .barra-estado__menu {
   padding: 14px 0 20px;
   border-top: 1px solid #fff;
@@ -131,9 +129,7 @@
   -o-transition: box-shadow 0.25s linear;
   transition: box-shadow 0.25s linear;
 }
-.barra-estado__menu > li > a:visited {
-  color: #e4e4e4 !important;
-}
+
 .barra-estado__menu > li > a:focus,
 .barra-estado__menu > li > a:hover {
   box-shadow: inset 5px 0 #fff;
