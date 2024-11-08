@@ -13,6 +13,10 @@
   }
 }
 
+.header-wrapper .header .tools-wrapper {
+  flex-direction: row !important;
+}
+
 .header {
   padding-right: 15px;
   padding-left: 15px;

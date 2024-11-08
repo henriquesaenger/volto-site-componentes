@@ -20,6 +20,8 @@ import {
 } from '@plone/volto/components';
 import BarraEstado from '../../../../components/BarraEstado/BarraEstado';
 import BarraAcessibilidade from '../../../../components/BarraAcessibilidade/BarraAcessibilidade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome';
 
 const messages = defineMessages({
   siteLabel: {
@@ -35,10 +37,14 @@ const InternetHeader = ({
   siteAction,
   siteTitle,
 }) => {
+  const navRoot = useSelector((state) => state.navroot?.data?.navroot);
+  const secretaria = navRoot?.secretaria?.data;
+
   return (
     <>
       <div className="header">
         <div className="tools-wrapper">
+          <SecretariaNome content={secretaria} />
           <LanguageSelector />
           <div className="tools">
             {!token && <Anontools />}

@@ -1,5 +1,7 @@
 import React from 'react';
 import Search from './search.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export const SearchBar = () => {
   {
@@ -19,7 +21,7 @@ export const SearchBar = () => {
         type="text"
         placeholder="O que você procura?"
       />
-      <img id="s-logo" src={Search} />
+      <FontAwesomeIcon icon={faSearch} id="s-logo" />
     </div>
   );
 };

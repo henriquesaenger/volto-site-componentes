@@ -5,13 +5,14 @@ import { useSelector, shallowEqual } from 'react-redux';
 import LogoProcergs from '../../../../components/LogoProcergs/LogoProcergs';
 import SeloGoverno from '../../../../components/SeloGoverno/SeloGoverno';
 import Endereco from '../../../../components/Endereco/Endereco';
-import Telefone from '../../../../components/Contato/Contato';
+import Contato from '../../../../components/Contato/Contato';
+import SitemapComponent from '../../../../components/SitemapComponent/SitemapComponent';
+import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome';
 
 const Footer = ({ intl }) => {
   const site = useSelector((state) => state.site.data);
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
   const local = navRoot?.local?.data;
-  const contato = navRoot?.contato?.data;
 
   return (
     <div id="footer" stackable vertical padded inverted color="grey">
@@ -20,6 +21,11 @@ const Footer = ({ intl }) => {
           <SeloGoverno />
         </div>
         <div className="footer-info">
+          <div>
+            {Endereco && local && <Endereco content={local} />}
+            {Contato && local && <Contato content={local} />}
+          </div>
+          <SitemapComponent />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             nulla eaque obcaecati explicabo nemo fuga. Nesciunt, dicta ratione?
