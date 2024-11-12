@@ -38,13 +38,15 @@ const InternetHeader = ({
   siteTitle,
 }) => {
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
-  const secretaria = navRoot?.secretaria?.data;
+  const nome_sec = navRoot?.nome_secretaria_vinculada;
+  const url_sec = navRoot?.url_secretaria_vinculada;
+  console.log(navRoot);
 
   return (
     <>
       <div className="header">
         <div className="tools-wrapper">
-          <SecretariaNome content={secretaria} />
+          <SecretariaNome content={nome_sec} url={url_sec} />
           <LanguageSelector />
           <div className="tools">
             {!token && <Anontools />}
@@ -90,8 +92,8 @@ const IntranetHeader = ({
     <>
       <div className="header">
         <div className="tools-wrapper">
+          {secretaria && <SecretariaNome content={secretaria} />}
           <LanguageSelector />
-
           <div className="tools">
             {!token && <Anontools />}
             {siteAction &&
