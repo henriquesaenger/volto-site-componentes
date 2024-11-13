@@ -27,3 +27,8 @@ msgstr ""
 #: components/Blocks/LocaisBlock/schema
 msgid "Locais"
 msgstr ""
+
+#. Default: "Sitemap"
+#: components/SiteMapFooter/SiteMapFooter
+msgid "Sitemap"
+msgstr ""

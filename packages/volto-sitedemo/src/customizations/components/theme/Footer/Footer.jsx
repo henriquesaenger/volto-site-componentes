@@ -8,11 +8,10 @@ import Endereco from '../../../../components/Endereco/Endereco';
 import Contato from '../../../../components/Contato/Contato';
 import SitemapComponent from '../../../../components/SitemapComponent/SitemapComponent';
 import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome';
+import { default as Sitemap } from '../../../../components/SiteMapFooter/SiteMapFooter';
 
 const Footer = ({ intl }) => {
-  const site = useSelector((state) => state.site.data);
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
-  const local = navRoot?.local?.data;
 
   return (
     <div id="footer" stackable vertical padded inverted color="grey">
