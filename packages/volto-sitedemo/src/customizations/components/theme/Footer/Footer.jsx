@@ -8,7 +8,9 @@ import Endereco from '../../../../components/Endereco/Endereco';
 import Contato from '../../../../components/Contato/Contato';
 import SitemapComponent from '../../../../components/SitemapComponent/SitemapComponent';
 import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome';
-import { default as Sitemap } from '../../../../components/SiteMapFooter/SiteMapFooter';
+import SiteMapFooter, {
+  default as Sitemap,
+} from '../../../../components/SiteMapFooter/SiteMapFooter';
 
 const Footer = ({ intl }) => {
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
@@ -19,19 +21,7 @@ const Footer = ({ intl }) => {
         <div className="footer-site-nome">
           <SeloGoverno />
         </div>
-        <div className="footer-info">
-          <div>
-            {Endereco && local && <Endereco content={local} />}
-            {Contato && local && <Contato content={local} />}
-          </div>
-          <SitemapComponent />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            nulla eaque obcaecati explicabo nemo fuga. Nesciunt, dicta ratione?
-            Id commodi similique veritatis dolor quae modi porro. Magni
-            exercitationem facilis quae.
-          </p>
-        </div>
+        <SiteMapFooter location="\" />
       </div>
       <div className="footer-logo">
         <p>
