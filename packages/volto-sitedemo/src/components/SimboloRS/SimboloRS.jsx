@@ -1,16 +1,16 @@
 import React from 'react';
 import { UniversalLink } from '@plone/volto/components';
 import { div } from 'semantic-ui-react';
-import LogoRS from './rslogo.svg';
+import SimboloRS from './simbolo_RS.png';
 
 const SeloGoverno = () => {
   return (
-    <div className="footer-selo-governo">
+    <div className="simboloRS">
       <UniversalLink href="https://www.estado.rs.gov.br" target="_self">
         <img
-          src={LogoRS}
+          src={SimboloRS}
           alt="RS.GOV - Novas façanhas"
-          className="selo-governo--padrao"
+          className="simboloRS"
         />
       </UniversalLink>
     </div>

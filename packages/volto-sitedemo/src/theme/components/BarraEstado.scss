@@ -1,8 +1,10 @@
 /*@import url(//fonts.googleapis.com/css?family=Roboto);*/
 
 #rs-gov {
+  color: #1a7235;
   vertical-align: initial;
 }
+
 #barra-estado__toggle,
 .barra-estado__toggle {
   display: none;
@@ -51,8 +53,9 @@
 
 .barra-estado {
   height: 32px;
-  background-color: #4f4f4f;
+  background-color: #f8f8f8;
 }
+
 .barra-estado__container {
   position: relative;
   height: 100%;
@@ -86,21 +89,20 @@
   height: 16px;
   margin-top: 6px;
 }
-.barra-estado__logo svg path {
-  fill: #f4f4f1;
-}
+
 .barra-estado__menu {
   padding: 14px 0 20px;
   border-top: 1px solid #fff;
   margin-top: 0;
   background: #737474;
   font-family: Roboto, Arial, sans-serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 .barra-estado__nav {
   display: block;
   float: right;
 }
+
 .barra-estado__menu,
 .barra-estado__menu > li,
 .barra-estado__menu > li > a,
@@ -118,18 +120,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 13px 40px;
-  color: #e4e4e4;
-  font-size: 14px;
-  font-weight: 400;
+  color: #1a7235;
+  font-size: 12px;
+  font-weight: 700;
   line-height: 1;
   -webkit-transition: box-shadow 0.25s linear;
   -moz-transition: box-shadow 0.25s linear;
   -o-transition: box-shadow 0.25s linear;
   transition: box-shadow 0.25s linear;
 }
-.barra-estado__menu > li > a:visited {
-  color: #e4e4e4 !important;
-}
+
 .barra-estado__menu > li > a:focus,
 .barra-estado__menu > li > a:hover {
   box-shadow: inset 5px 0 #fff;
@@ -147,19 +147,8 @@
   z-index: 2;
 }
 .barra-estado__toggle:after {
-  position: absolute;
-  right: 0;
-  display: block;
-  width: 45px;
-  height: 32px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   color: #bcbcbb;
   content: attr(data-open);
-  font-size: 18px;
-  line-height: 13px;
-  text-align: right;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -180,7 +169,7 @@
   }
   .barra-estado__menu > li > a {
     padding: 9px 13px;
-    font-size: 11px;
+    font-size: 12px;
   }
   .barra-estado__menu > li > a:focus,
   .barra-estado__menu > li > a:hover {

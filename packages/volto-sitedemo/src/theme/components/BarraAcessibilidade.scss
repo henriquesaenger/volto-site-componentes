@@ -1,44 +1,56 @@
-.wrapper__cabecalho__funcionalidades {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  -ms-flex-pack: justify;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper__cabecalho__funcionalidades {
-    -webkit-flex-basis: auto;
-    flex-basis: auto;
-  }
-}
-/* Acessibilidade */
-.wrapper__cabecalho__funcionalidades {
-  /*background-color: #ececec;*/
-  height: 40px;
-}
 @media (max-width: 767px) {
-  .wrapper__cabecalho__funcionalidades {
+  .acess-wrapper {
     display: none !important;
   }
 }
 
-.horizontal-list {
-  display: flex; /* Exibe os itens da lista em linha */
-  padding: 0;
-  margin: 0;
-  list-style-type: none; /* Remove os marcadores da lista */
+.acess-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.horizontal-list li {
-  margin-right: 10px; /* Espaçamento entre os itens */
+.acess-ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0; /* Remove o recuo padrão */
+  margin: 0; /* Remove a margem padrão */
+  gap: 20px;
+  list-style-type: none;
 }
-.horizontal-list a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+
+.acess-ul > * {
+  color: #1a7235;
+  font-size: 12px;
+}
+
+.acess-ul > * :hover {
+  color: #f8f8f8;
+  cursor: pointer;
+}
+
+.acess-left > * > * {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .acess-wrapper {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .acess-wrapper {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .acess-wrapper {
+    width: 1170px;
+  }
 }

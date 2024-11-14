@@ -7,6 +7,8 @@ import { useIntl, defineMessages } from 'react-intl';
 import config from '@plone/volto/registry';
 import cx from 'classnames';
 import IntranetSearchWidget from '@kitconcept/volto-light-theme/components//SearchWidget/IntranetSearchWidget';
+import SimboloRS from '../../../../components/SimboloRS/SimboloRS';
+import { SearchBar } from '../../../../components/SearchBar/SearchBar';
 
 import {
   Anontools,
@@ -18,6 +20,8 @@ import {
 } from '@plone/volto/components';
 import BarraEstado from '../../../../components/BarraEstado/BarraEstado';
 import BarraAcessibilidade from '../../../../components/BarraAcessibilidade/BarraAcessibilidade';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome';
 
 const messages = defineMessages({
   siteLabel: {
@@ -33,12 +37,17 @@ const InternetHeader = ({
   siteAction,
   siteTitle,
 }) => {
+  const navRoot = useSelector((state) => state.navroot?.data?.navroot);
+  const nome_sec = navRoot?.nome_secretaria_vinculada;
+  const url_sec = navRoot?.url_secretaria_vinculada;
+  console.log(navRoot);
+
   return (
     <>
       <div className="header">
         <div className="tools-wrapper">
+          <SecretariaNome content={nome_sec} url={url_sec} />
           <LanguageSelector />
-
           <div className="tools">
             {!token && <Anontools />}
             {siteAction &&
@@ -55,15 +64,15 @@ const InternetHeader = ({
           )}
         </div>
         <div className="logo-nav-wrapper">
-          <div className="logo">
-            <Logo />
+          <div className="simbolo">
+            <SimboloRS />
+            <div className="header-titulo">{siteTitle}</div>
           </div>
-          <div>{siteTitle}</div>
-          <Navigation pathname={pathname} />
+          {/*<Navigation pathname={pathname} />*/}
           <MobileNavigation pathname={pathname} />
           <div className="search-wrapper navigation-desktop">
             <div className="search">
-              <SearchWidget />
+              <SearchBar />
             </div>
           </div>
         </div>
@@ -83,8 +92,8 @@ const IntranetHeader = ({
     <>
       <div className="header">
         <div className="tools-wrapper">
+          {secretaria && <SecretariaNome content={secretaria} />}
           <LanguageSelector />
-
           <div className="tools">
             {!token && <Anontools />}
             {siteAction &&
@@ -101,10 +110,10 @@ const IntranetHeader = ({
           )}
         </div>
         <div className="logo-nav-wrapper">
-          <div className="logo">
-            <Logo />
+          <div className="simbolo">
+            <SimboloRS />
+            {siteTitle}
           </div>
-          <div>{siteTitle}</div>
           <div className="search-wrapper">
             <div className="search">
               <IntranetSearchWidget />
@@ -143,7 +152,7 @@ const Header = (props) => {
       className={cx('header-wrapper', { 'intranet-header': intranetHeader })}
     >
       <BarraEstado />
-      {/* <BarraAcessibilidade /> */}
+      <BarraAcessibilidade />
       <Container layout>
         {intranetHeader ? (
           <IntranetHeader
