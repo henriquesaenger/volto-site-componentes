@@ -12,3 +12,5 @@ results
 yarn.lock
 /public
 /frontend.log
+.DS_Store
+packages/.DS_Store
