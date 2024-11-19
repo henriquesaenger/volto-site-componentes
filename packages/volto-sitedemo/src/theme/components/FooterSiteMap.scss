@@ -5,7 +5,19 @@
   }
 }
 
+.rodape__mapa-site {
+  display: flex;
+  overflow: hidden;
+  width: 25%;
+  flex-direction: column;
+  padding-left: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .rodape__mapa-site li {
+  margin-bottom: 10px;
+  justify-items: left;
   list-style-type: none;
 }
 
