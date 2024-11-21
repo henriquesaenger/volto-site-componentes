@@ -11,6 +11,7 @@ import SecretariaNome from '../../../../components/SecretariaNome/SecretariaNome
 import SiteMapFooter, {
   default as Sitemap,
 } from '../../../../components/SiteMapFooter/SiteMapFooter';
+import RedesSociais from '../../../../components/RedesSociais/RedesSociais';
 
 const Footer = ({ intl }) => {
   const navRoot = useSelector((state) => state.navroot?.data?.navroot);
@@ -22,6 +23,7 @@ const Footer = ({ intl }) => {
           <SeloGoverno />
         </div>
         <SiteMapFooter location="\" />
+        <RedesSociais />
       </div>
       <div className="footer-logo">
         <p>
