@@ -45,10 +45,11 @@ function Sitemap(props) {
   }, [pathname, lang, getNavigation]);
 
   const renderItems = (items) => {
+    console.log('ITENS AQUI', items);
     return (
       <ul className="rodape__mapa-site">
         {items.map((item) => (
-          <li class="rodape__mapa-site__item" key={item.title}>
+          <li className="rodape__mapa-site__item" key={item.title}>
             <Link to={item.url}>{item.title}</Link>
             <ul>
               {item.items &&
@@ -71,7 +72,6 @@ function Sitemap(props) {
     <div id="page-sitemap">
       <Helmet title={props.intl.formatMessage(messages.Sitemap)} />
       <Container className="view-wrapper">
-        <h1>{props.intl.formatMessage(messages.Sitemap)} </h1>
         {props.items && renderItems(props.items, 2)}
       </Container>
     </div>

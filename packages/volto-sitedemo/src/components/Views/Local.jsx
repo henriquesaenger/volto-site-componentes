@@ -1,14 +1,16 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 import Endereco from '../Endereco/Endereco';
+import Contato from '../Contato/Contato';
 
 const LocalView = (props) => {
   const { content, location } = props;
 
   return (
     <Container id="page-document" className="view-wrapper local-view">
-      <Endereco content={content} />
       {content && <h2>{content.description}</h2>}
+      <Endereco content={content} />
+      <Contato content={content} />
     </Container>
   );
 };
