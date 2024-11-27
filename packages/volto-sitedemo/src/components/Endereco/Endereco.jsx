@@ -1,12 +1,16 @@
 import React from 'react';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
 const Endereco = ({ content }) => {
   const {
+    title,
     logradouro,
     complemento,
-    cidade,
+    municipio,
     estado,
+    pais,
     cep,
     numero,
     bairro,
@@ -41,26 +45,39 @@ const Endereco = ({ content }) => {
         </div>
       )}
       <div>
+        {title && (
+          <div className="titulo-wrapper-endereco">
+            <FontAwesomeIcon icon={faLocationPin} />
+            <span className="titulo-endereco">{title}</span>
+          </div>
+        )}
+      </div>
+      <div>
         {logradouro && (
           <>
-            <span className="logradouro">{logradouro}</span>
-            {numero && <span className="numero">, {numero}</span>}
+            <span className="logradouro-endereco">{logradouro}</span>
+            {numero && <span className="numero-endereco">, {numero}</span>}
+            {bairro && <span className="bairro-endereco">- {bairro}</span>}
           </>
         )}
       </div>
       <div>
-        {complemento && <span className="complemento">{complemento}</span>}
+        {complemento && (
+          <span className="complemento-endereco">{complemento}</span>
+        )}
       </div>
-      <div>{bairro && <span className="bairro">{bairro}</span>}</div>
-      <div>{cep && <span className="cep">{cep}</span>}</div>
       <div>
-        {cidade && (
+        {municipio && (
           <>
-            <span className="cidade">{cidade}</span>
-            {estado && <span className="estado"> - {estado.token}</span>}
+            <span className="municipio-endereco">{municipio}</span>
+            {estado && (
+              <span className="estado-endereco"> - {estado.token}</span>
+            )}
+            {pais && <span className="pais-endereco"> - {pais}</span>}
           </>
         )}
       </div>
+      <div>{cep && <span className="cep-endereco">{cep}</span>}</div>
     </div>
   );
 };
