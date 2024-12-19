@@ -11,10 +11,10 @@
     "react"
   ],
   "author": "PROCERGS",
-  "homepage": "https://github.com/PROCERGS/volto-sitedemo#readme",
+  "homepage": "https://github.com/procergs/volto-sitedemo#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:PROCERGS/volto-sitedemo.git"
+    "url": "git@github.com:procergs/volto-sitedemo.git"
   },
   "publishConfig": {
     "access": "public"
@@ -27,21 +27,19 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "dependencies": {
-    "@react-google-maps/api": "*",
     "@eeacms/volto-accordion-block": "*",
     "@kitconcept/volto-button-block": "*",
     "@kitconcept/volto-heading-block": "*",
-    "@kitconcept/volto-highlight-block": "*",
     "@kitconcept/volto-introduction-block": "*",
     "@kitconcept/volto-separator-block": "*",
     "@kitconcept/volto-slider-block": "*",
-    "@kitconcept/volto-light-theme": "*",
 
+    "@react-google-maps/api": "*",
+    
     "@codesyntax/volto-listingadvanced-variation": "*",
 
     "@fortawesome/react-fontawesome": "*",
-    "@fortawesome/free-solid-svg-icons": "*",
-    "@kitconcept/volto-dsgvo-banner": "git://github.com/PROCERGS/volto-dsgvo-banner.git"
+    "@fortawesome/free-solid-svg-icons": "*"
   },
   "peerDependencies": {
     "react": "18.2.0",
