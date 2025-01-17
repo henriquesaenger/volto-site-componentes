@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PreviewLink from '../../PreviewLink/PreviewLink';
 import '../../../theme/components/GridWithImage.scss';
 
 const GridWithImage = ({ items = [] }) => {
-  console.log(items);
   return (
     <div className="grid-with-image">
       <div className="grid-link">
