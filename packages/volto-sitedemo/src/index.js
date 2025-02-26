@@ -12,7 +12,14 @@ import locais from './reducers/locais/locais';
 
 import EnderecoNew from './components/LocalTeaser/EnderecoTemplate';
 
+//gray and small text
+import './theme/custom.less';
+
+import installSlate from './editor';
+
 const applyConfig = (config) => {
+  config = [installSlate].reduce((acc, apply) => apply(acc), config);
+
   config.widgets.widget.lista_telefones = ListaTelefones;
   //Bloco Locais
   config.blocks.blocksConfig.locaisBlock = {
