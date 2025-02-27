@@ -7,7 +7,13 @@ const GridWithImage = ({ items = [] }) => {
       <div className="grid-link">
         {items.map((item) => (
           <a
-            href={item['@type'] === 'Link' ? item.getRemoteUrl : (item.getURL ? item.getURL : item['url']) }
+            href={
+              item['@type'] === 'Link'
+                ? item.getRemoteUrl
+                : item.getURL
+                  ? item.getURL
+                  : item['url']
+            }
             key={item['@id']}
           >
             <div className="grid-item" key={item['@id']}>
