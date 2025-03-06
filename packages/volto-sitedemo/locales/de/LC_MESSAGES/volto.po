@@ -16,6 +16,26 @@ msgstr ""
 msgid "Cabeçalho"
 msgstr ""
 
+#. Default: "Cor de fundo"
+#: components/Blocks/ImagemTexto/schema
+msgid "Cor de fundo"
+msgstr ""
+
+#. Default: "Descrição"
+#: components/Blocks/ImagemTexto/schema
+msgid "Descrição"
+msgstr ""
+
+#. Default: "Descrição da imagem a ser exibida"
+#: components/Blocks/ImagemTexto/schema
+msgid "Descrição da imagem a ser exibida"
+msgstr ""
+
+#. Default: "Direita"
+#: components/Blocks/ImagemTexto/schema
+msgid "Direita"
+msgstr ""
+
 #. Default: "Edit textsize"
 #: editor/plugins/TextSize/index
 msgid "Edit textsize"
@@ -31,9 +51,44 @@ msgstr ""
 msgid "Escolha um Local"
 msgstr ""
 
+#. Default: "Esquerda"
+#: components/Blocks/ImagemTexto/schema
+msgid "Esquerda"
+msgstr ""
+
+#. Default: "Exibe uma imagem com descrição em bloco"
+#: components/Blocks/ImagemTexto/schema
+msgid "Exibe uma imagem com descrição em bloco"
+msgstr ""
+
+#. Default: "Imagem"
+#: components/Blocks/ImagemTexto/schema
+msgid "Imagem"
+msgstr ""
+
+#. Default: "Imagem a ser exibida"
+#: components/Blocks/ImagemTexto/schema
+msgid "Imagem a ser exibida"
+msgstr ""
+
+#. Default: "Imagem com descrição"
+#: components/Blocks/ImagemTexto/schema
+msgid "Imagem com descrição"
+msgstr ""
+
 #. Default: "Locais"
 #: components/Blocks/LocaisBlock/schema
 msgid "Locais"
+msgstr ""
+
+#. Default: "Posição"
+#: components/Blocks/ImagemTexto/schema
+msgid "Posição"
+msgstr ""
+
+#. Default: "Posição da imagem"
+#: components/Blocks/ImagemTexto/schema
+msgid "Posição da imagem"
 msgstr ""
 
 #. Default: "Remove textsize"
