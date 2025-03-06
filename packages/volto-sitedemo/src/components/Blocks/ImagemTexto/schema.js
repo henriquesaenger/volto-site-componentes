@@ -45,6 +45,14 @@ const messages = defineMessages({
     id: 'Cor de fundo',
     defaultMessage: 'Cor de fundo',
   },
+  background_color_choices_transparent: {
+    id: 'Transparente',
+    defaultMessage: 'Transparente',
+  },
+  background_color_choices_grey: {
+    id: 'Cinza',
+    defaultMessage: 'Cinza',
+  },
 });
 
 export const imagemTextoSchema = (props) => {
@@ -98,8 +106,24 @@ export const imagemTextoSchema = (props) => {
         title: props.intl.formatMessage(messages.background_color_title),
         widget: 'color_picker',
         colors: [
-          { name: 'transparent', label: 'Transparente' },
-          { name: 'grey', label: 'Cinza' },
+          {
+            name: 'transparent',
+            label: props.intl.formatMessage(
+              messages.background_color_choices_transparent,
+            ),
+            style: {
+              'background-color': 'transparent',
+            },
+          },
+          {
+            name: 'grey',
+            label: props.intl.formatMessage(
+              messages.background_color_choices_grey,
+            ),
+            style: {
+              'background-color': '#ededed',
+            },
+          },
         ],
         default: 'grey',
       },
