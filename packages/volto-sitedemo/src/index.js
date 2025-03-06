@@ -6,6 +6,11 @@ import LocaisBlockEdit from './components/Blocks/LocaisBlock/Edit';
 import LocaisBlockView from './components/Blocks/LocaisBlock/View';
 import locaisSVG from '@plone/volto/icons/home.svg';
 
+//Imagem com descricao
+import ImagemTextoBlockEdit from './components/Blocks/ImagemTexto/Edit';
+import ImagemTextoBlockView from './components/Blocks/ImagemTexto/View';
+import imageTextoSVG from '@plone/volto/icons/image.svg';
+
 //reducers
 import defaultReducers from '@plone/volto/reducers';
 import locais from './reducers/locais/locais';
@@ -29,6 +34,16 @@ const applyConfig = (config) => {
     icon: locaisSVG,
     edit: LocaisBlockEdit,
     view: LocaisBlockView,
+    sidebarTab: 1,
+  };
+  // Bloco de Imagem com Descricao
+  config.blocks.blocksConfig.imagemTextoBlock = {
+    id: 'imagemTextoBlock',
+    title: 'Imagem com descrição',
+    group: 'procergs',
+    icon: imageTextoSVG,
+    edit: ImagemTextoBlockEdit,
+    view: ImagemTextoBlockView,
     sidebarTab: 1,
   };
 
