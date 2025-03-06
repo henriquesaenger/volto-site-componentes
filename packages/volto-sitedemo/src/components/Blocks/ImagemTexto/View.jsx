@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { flattenToAppURL } from '@plone/volto/helpers';
 
 const ImagemTextoBlockView = (props) => {
-  const { data, isEditMode, className } = props;
+  const { data } = props;
   const image_data = useMemo(() => data, [data]);
   const align =
     image_data?.image_position === 'right' || image_data?.image_position === ''
