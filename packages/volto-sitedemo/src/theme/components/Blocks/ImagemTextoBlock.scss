@@ -26,6 +26,7 @@
 
 .imagem-texto-block-wrapper {
   display: flex;
+  max-width: none !important;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -39,10 +40,11 @@
   }
   .container {
     display: flex;
+    max-width: var(--narrow-container-width);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px 0px;
     font-size: 16px;
     gap: 48px;
     &.reverse {
@@ -61,6 +63,7 @@
     .container-text {
       align-items: center;
       justify-content: center;
+      text-align: left;
     }
   }
 }
