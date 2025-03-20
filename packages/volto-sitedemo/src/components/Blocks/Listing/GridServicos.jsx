@@ -1,10 +1,10 @@
 import React from 'react';
 import PreviewLink from '../../PreviewLink/PreviewLink';
 
-const GridWithImage = ({ items = [] }) => {
+const GridServicos = ({ items = [] }) => {
   return (
-    <div className="custom-grid-with-image">
-      <div className="custom-grid-link">
+    <div className="servicos-grid">
+      <div className="servicos-grid-link">
         {items.map((item) => (
           <a
             href={
@@ -16,17 +16,20 @@ const GridWithImage = ({ items = [] }) => {
             }
             key={item['@id']}
           >
-            <div className="custom-grid-item" key={item['@id']}>
-              <div className="custom-image">
+            <div className="servicos-grid-item" key={item['@id']}>
+              <div className="servicos-content">
+                <h3>{item.title}</h3>
+                <p>{item.head_title}</p>
+              </div>
+              <div className="servicos-image">
                 <PreviewLink
                   item={item}
                   alt={item.image_caption}
-                  className="custom-grid-image"
+                  className="servicos-grid-image"
                   loading="lazy"
                 />
               </div>
-              <div className="custom-content">
-                <h3>{item.title}</h3>
+              <div className="servicos-content">
                 <p>{item.description}</p>
               </div>
             </div>
@@ -37,4 +40,4 @@ const GridWithImage = ({ items = [] }) => {
   );
 };
 
-export default GridWithImage;
+export default GridServicos;
