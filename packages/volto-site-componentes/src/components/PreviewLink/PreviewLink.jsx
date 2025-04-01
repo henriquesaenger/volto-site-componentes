@@ -14,7 +14,7 @@ function PreviewLink({ item, alt, image_field, showDefault = true, ...rest }) {
     <Image
       item={item}
       image_field={image_field || item.image_field}
-      alt={alt || ""}
+      alt={alt || ''}
       {...rest}
     />
   );

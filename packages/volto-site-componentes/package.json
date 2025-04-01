@@ -1,5 +1,5 @@
 {
-  "name": "volto-sitedemo",
+  "name": "volto-site-componentes",
   "version": "1.0.0-alpha.0",
   "description": "Site Demonstração",
   "main": "src/index.js",
@@ -11,10 +11,10 @@
     "react"
   ],
   "author": "PROCERGS",
-  "homepage": "https://github.com/procergs/volto-sitedemo#readme",
+  "homepage": "https://github.com/procergs/volto-site-componentes#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:procergs/volto-sitedemo.git"
+    "url": "git@github.com:procergs/volto-site-componentes.git"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
 const addons = [
-  'volto-sitedemo'
+  'volto-site-componentes'
 ];
 
 const theme = '';

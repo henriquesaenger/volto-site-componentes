@@ -1,11 +1,11 @@
-# Site Demonstração (volto-sitedemo)
+# Site Demonstração (volto-site-componentes)
 
 Site Demonstração
 
-[![npm](https://img.shields.io/npm/v/volto-sitedemo)](https://www.npmjs.com/package/volto-sitedemo)
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://procergs.github.io/volto-sitedemo/)
-[![Code analysis checks](https://github.com/procergs/volto-sitedemo/actions/workflows/code.yml/badge.svg)](https://github.com/procergs/volto-sitedemo/actions/workflows/code.yml)
-[![Unit tests](https://github.com/procergs/volto-sitedemo/actions/workflows/unit.yml/badge.svg)](https://github.com/procergs/volto-sitedemo/actions/workflows/unit.yml)
+[![npm](https://img.shields.io/npm/v/volto-site-componentes)](https://www.npmjs.com/package/volto-site-componentes)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://procergs.github.io/volto-site-componentes/)
+[![Code analysis checks](https://github.com/procergs/volto-site-componentes/actions/workflows/code.yml/badge.svg)](https://github.com/procergs/volto-site-componentes/actions/workflows/code.yml)
+[![Unit tests](https://github.com/procergs/volto-site-componentes/actions/workflows/unit.yml/badge.svg)](https://github.com/procergs/volto-site-componentes/actions/workflows/unit.yml)
 
 ## Features
 
@@ -22,19 +22,19 @@ Create a new Volto project (you can skip this step if you already have one):
 
 ```
 npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon volto-sitedemo
+yo @plone/volto my-volto-project --addon volto-site-componentes
 cd my-volto-project
 ```
 
-Add `volto-sitedemo` to your package.json:
+Add `volto-site-componentes` to your package.json:
 
 ```JSON
 "addons": [
-    "volto-sitedemo"
+    "volto-site-componentes"
 ],
 
 "dependencies": {
-    "volto-sitedemo": "*"
+    "volto-site-componentes": "*"
 }
 ```
 
@@ -52,24 +52,24 @@ yarn start
 
 ### Volto 18 and later
 
-Add `volto-sitedemo` to your `package.json`:
+Add `volto-site-componentes` to your `package.json`:
 
 ```json
 "dependencies": {
-    "volto-sitedemo": "*"
+    "volto-site-componentes": "*"
 }
 ```
 
-Add `volto-sitedemo` to your `volto.config.js`:
+Add `volto-site-componentes` to your `volto.config.js`:
 
 ```javascript
-const addons = ['volto-sitedemo'];
+const addons = ['volto-site-componentes'];
 ```
 
 If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
 
 ```javascript
-const theme = 'volto-sitedemo';
+const theme = 'volto-site-componentes';
 ```
 
 ## Test installation

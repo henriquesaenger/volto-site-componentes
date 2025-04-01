@@ -14,7 +14,7 @@
     "jsx": "react-jsx",
     "paths": {
       "@plone/volto/*": ["../../core/packages/volto/src/*"],
-      "volto-sitedemo/*": ["./src/*"]
+      "volto-site-componentes/*": ["./src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "src/editor/config.jsx"],

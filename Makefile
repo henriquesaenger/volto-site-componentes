@@ -26,7 +26,7 @@ PLONE_VERSION=6
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
 
-ADDON_NAME='volto-sitedemo'
+ADDON_NAME='volto-site-componentes'
 
 .PHONY: help
 help: ## Show this help
