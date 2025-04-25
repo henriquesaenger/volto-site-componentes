@@ -1,5 +1,6 @@
 import React from 'react';
 import PreviewImg from '../../../PreviewImg/PreviewImg';
+import './GridProg.css';
 
 const GridProg = ({ items = [] }) => {
   return (
@@ -18,9 +19,7 @@ const GridProg = ({ items = [] }) => {
           >
             <div className="prog-grid-item" key={item['@id']}>
               <div className="prog-content">
-                <h3>
-                  {item.title}
-                </h3>
+                <h3>{item.title}</h3>
               </div>
               <div className="prog-image">
                 <PreviewImg
