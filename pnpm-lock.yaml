@@ -1420,6 +1420,9 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
+      react-slick:
+        specifier: 0.25.2
+        version: 0.25.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@plone/scripts':
         specifier: ^3.6.1

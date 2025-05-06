@@ -27,7 +27,6 @@ import BannerBlockEdit from './components/Blocks/Banner/Edit';
 import bannerSVG from '@plone/volto/icons/home.svg';
 
 //gray and small text
-import './theme/custom.less';
 
 import installSlate from './editor';
 
