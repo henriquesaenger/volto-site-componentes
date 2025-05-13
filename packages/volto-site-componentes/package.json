@@ -27,6 +27,8 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "dependencies": {
+    "react-slick": "0.25.2",
+
     "@react-google-maps/api": "*",
     
     "@codesyntax/volto-listingadvanced-variation": "*",

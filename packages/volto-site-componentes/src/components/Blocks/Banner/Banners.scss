@@ -1,12 +1,14 @@
 .block.banners {
   max-width: var(--layout-container-width);
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .banners-row {
-  max-width: var(--default-container-width);
   display: flex;
+  max-width: var(--default-container-width);
   margin-right: auto;
   margin-left: auto;
   gap: clamp(1rem, 1vw, 3rem);
@@ -31,4 +33,8 @@
 .block.banners .banners-row .banner-column a.external:after {
   display: none !important;
   content: none !important;
+}
+
+.block.carousel .slick-slide {
+  padding: 0px;
 }
